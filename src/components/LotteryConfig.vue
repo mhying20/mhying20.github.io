@@ -20,10 +20,10 @@
     </div>
     <div class="container">
       <el-form ref="form" :model="form" size="mini">
-        <el-form-item label="抽奖标题">
+        <el-form-item label="抽獎標題">
           <el-input v-model="form.name"></el-input>
         </el-form-item>
-        <el-form-item label="抽奖总人数">
+        <el-form-item label="抽獎總人數">
           <el-input
             type="number"
             v-model="form.number"
@@ -31,7 +31,7 @@
             :step="1"
           ></el-input>
         </el-form-item>
-        <el-form-item label="一等奖">
+        <el-form-item label="頭奖">
           <el-input
             type="number"
             v-model="form.firstPrize"
@@ -65,13 +65,13 @@
       width="300px"
       class="dialog-showAddLottery"
     >
-      <div class="add-title" slot="title">增加奖项</div>
+      <div class="add-title" slot="title">增加獎項</div>
       <el-form ref="newLottery" :model="newLottery" size="mini">
-        <el-form-item label="奖项名称">
+        <el-form-item label="獎項名稱">
           <el-input v-model="newLottery.name"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" @click="addHandler">增加奖项</el-button>
+          <el-button type="primary" @click="addHandler">增加獎項</el-button>
           <el-button @click="showAddLottery = false">取消</el-button>
         </el-form-item>
       </el-form>
@@ -113,7 +113,7 @@ export default {
       this.$emit('update:visible', false);
 
       this.$message({
-        message: '保存成功',
+        message: '儲存成功',
         type: 'success'
       });
 

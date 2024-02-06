@@ -8,9 +8,9 @@
   >
     <div class="c-LotteryConfigtitle" slot="title">
       <span :style="{ fontSize: '16px', marginRight: '20px' }">
-        抽奖配置
+        抽獎配置
       </span>
-      <el-button size="mini" @click="addLottery">增加奖项</el-button>
+      <el-button size="mini" @click="addLottery">增加獎項</el-button>
       <el-button size="mini" type="primary" @click="onSubmit"
         >保存配置</el-button
       >
